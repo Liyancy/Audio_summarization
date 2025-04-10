@@ -1,4 +1,4 @@
-"""from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 model_id = "google/flan-t5-xl"
 tokenizer = AutoTokenizer.from_pretrained(model_id)
@@ -16,7 +16,7 @@ outputs = model.generate(**inputs, max_new_tokens=512)
 # Decode and print the summary
 summary = tokenizer.decode(outputs[0], skip_special_tokens=True)
 print("Summary:\n", summary)"""
-from transformers.utils import cached_file
+
 
 model_id = "google/flan-t5-xl"
 config_file = cached_file(model_id, "config.json")
