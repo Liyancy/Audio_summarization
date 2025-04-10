@@ -15,7 +15,7 @@ outputs = model.generate(**inputs, max_new_tokens=512)
 
 # Decode and print the summary
 summary = tokenizer.decode(outputs[0], skip_special_tokens=True)
-print("Summary:\n", summary)"""
+print("Summary:\n", summary)
 
 
 model_id = "google/flan-t5-xl"
